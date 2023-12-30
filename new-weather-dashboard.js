@@ -44,21 +44,24 @@ function getWeatherData(apiUrl, cityName) {
     .catch(error => console.error("Error fetching weather data:", error));
 }
 
+
 // Function to Display Current Weather
 function displayCurrentWeather(data) {
   const currentWeather = data.list[0];
-  const temperature = currentWeather.main.temp;
+  const temperatureKelvin = currentWeather.main.temp;
+  const temperatureCelsius = (temperatureKelvin - 273.15).toFixed(2);
   const description = currentWeather.weather[0].description;
   const cityName = data.city.name;
 
   const currentWeatherHTML = `
     <h2>${cityName}</h2>
-    <p>Temperature: ${temperature} &deg;C</p>
+    <p>Temperature: ${temperatureCelsius} &deg;C</p>
     <p>Description: ${description}</p>
   `;
 
   currentWeatherContainer.innerHTML = currentWeatherHTML;
 }
+
 
 // Function to Display Forecast
 function displayForecast(data) {
