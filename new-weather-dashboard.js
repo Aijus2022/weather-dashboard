@@ -69,13 +69,14 @@ function displayForecast(data) {
 
   const forecastHTML = forecastList.map(entry => {
     const date = new Date(entry.dt_txt);
-    const temperature = entry.main.temp;
+    const temperatureKelvin = entry.main.temp;
+    const temperatureCelsius = (temperatureKelvin - 273.15).toFixed(2);
     const description = entry.weather[0].description;
 
     return `
       <div>
         <p>Date: ${date.toDateString()}</p>
-        <p>Temperature: ${temperature} &deg;C</p>
+        <p>Temperature: ${temperatureCelsius} &deg;C</p>
         <p>Description: ${description}</p>
       </div>
     `;
