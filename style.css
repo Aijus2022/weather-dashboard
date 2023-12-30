@@ -83,3 +83,14 @@ li {
   height: 36px;
 }
 
+#main-content {
+  flex-grow: 1;
+  padding: 10px;
+  background: linear-gradient(to bottom, #001f3f, #003366); /* Navy blue gradient */
+  color: #fff; /* White text color */
+}
+
+/* Add this style if you want to style the search container text as well */
+#search-container {
+  color: #fff; /* White text color */
+}
