@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Weather Dashboard</title>
-  <link rel="stylesheet" href="new-weather-dashboard.css">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div id="search-container">
-    <input type="text" id="city-input" placeholder="Enter City">
+  <div id="app-container">
+    <label for="city-input">Enter City:</label>
+    <input type="text" id="city-input">
     <button id="search-button">Search</button>
-  </div>
-  <div id="currentWeatherContainer" class="weather-container"></div>
-  <div id="forecastContainer" class="weather-container"></div>
-  <div id="search-history-container">
-    <h2>Search History</h2>
+    <div id="current-weather-container"></div>
+    <div id="forecast-container"></div>
     <ul id="history-list"></ul>
   </div>
-  <script src="new-weather-dashboard.js"></script>
+
+  <script src="app.js"></script>
 </body>
 </html>
+
