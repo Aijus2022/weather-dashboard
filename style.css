@@ -41,7 +41,10 @@ button {
   cursor: pointer;
 }
 
-ul {
+/* Modified styling for history list */
+ul#history-list {
+  max-height: 150px; /* Adjust the max height as needed */
+  overflow-y: auto;  /* Add a scrollbar when the list exceeds the max height */
   list-style: none;
   padding: 0;
   margin: 0;
@@ -54,4 +57,5 @@ li {
   margin: 5px 0;
   background-color: #1a1a1a;
   color: #fff;
+  height: 36px; /* Fixed height for each list item */
 }
