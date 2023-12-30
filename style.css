@@ -35,12 +35,6 @@ body {
   order: -1; /* Push the left sidebar to the start of the flex container */
 }
 
-#main-content {
-  flex-grow: 1;
-  padding: 10px;
-  background-color: #303030;
-}
-
 /* Add your existing styles below... */
 h2 {
   color: #00ff00;
