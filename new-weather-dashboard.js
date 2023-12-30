@@ -2,9 +2,10 @@ const apiKey = "ebb88b956bf8c05653e9de0ca2230d40";
 const baseUrl = "https://api.openweathermap.org/data/2.5/forecast";
 const cityInput = document.getElementById("city-input");
 const searchButton = document.getElementById("search-button");
-const currentWeatherContainer = document.getElementById("current-weather-container");
-const forecastContainer = document.getElementById("forecast-container");
+const currentWeatherContainer = document.getElementById("currentWeatherContainer"); // Update ID
+const forecastContainer = document.getElementById("forecastContainer"); // Update ID
 const historyList = document.getElementById("history-list");
+
 
 // Event Listener for Search Button
 searchButton.addEventListener("click", function() {
