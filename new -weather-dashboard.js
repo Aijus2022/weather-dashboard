@@ -2,9 +2,9 @@ const apiKey = "ebb88b956bf8c05653e9de0ca2230d40";
 const baseUrl = "https://api.openweathermap.org/data/2.5/forecast";
 const cityInput = document.getElementById("city-input");
 const searchButton = document.getElementById("search-button");
-const currentWeatherContainer = document.getElementById("currentWeatherContainer"); // Add this line
-const forecastContainer = document.getElementById("forecastContainer"); // Add this line
-const historyList = document.getElementById("history-list"); // Assuming you have an element with id="history-list"
+const currentWeatherContainer = document.getElementById("current-weather-container");
+const forecastContainer = document.getElementById("forecast-container");
+const historyList = document.getElementById("history-list");
 
 // Event Listener for Search Button
 searchButton.addEventListener("click", function() {
@@ -16,6 +16,20 @@ searchButton.addEventListener("click", function() {
     alert("Please enter a city name.");
   }
 });
+
+// Load historical data when the page is initially loaded
+document.addEventListener("DOMContentLoaded", function() {
+  initializeLocalStorage();
+  loadFromLocalStorage();
+});
+
+// Function to Initialize Local Storage if empty
+function initializeLocalStorage() {
+  const history = JSON.parse(localStorage.getItem('weatherHistory')) || [];
+  if (!history.length) {
+    localStorage.setItem('weatherHistory', JSON.stringify([]));
+  }
+}
 
 // Function to Get Weather Data
 function getWeatherData(apiUrl, cityName) {
@@ -29,9 +43,10 @@ function getWeatherData(apiUrl, cityName) {
     })
     .catch(error => console.error("Error fetching weather data:", error));
 }
+
 // Function to Display Current Weather
 function displayCurrentWeather(data) {
-  const currentWeather = data.list[0]; // Assuming the current weather data is in the first item of the list
+  const currentWeather = data.list[0];
   const temperature = currentWeather.main.temp;
   const description = currentWeather.weather[0].description;
   const cityName = data.city.name;
@@ -47,8 +62,7 @@ function displayCurrentWeather(data) {
 
 // Function to Display Forecast
 function displayForecast(data) {
-  // Assuming the forecast data is in the list starting from the second item
-  const forecastList = data.list.slice(1, 6); // Displaying forecast for the next 5 days
+  const forecastList = data.list.slice(1, 6);
 
   const forecastHTML = forecastList.map(entry => {
     const date = new Date(entry.dt_txt);
@@ -86,4 +100,3 @@ function loadFromLocalStorage() {
   const history = JSON.parse(localStorage.getItem('weatherHistory')) || [];
   history.forEach(city => addToHistory(city));
 }
-
