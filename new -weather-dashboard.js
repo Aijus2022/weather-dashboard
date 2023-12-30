@@ -1,3 +1,34 @@
+const apiKey = "ebb88b956bf8c05653e9de0ca2230d40";
+const baseUrl = "https://api.openweathermap.org/data/2.5/forecast";
+const cityInput = document.getElementById("city-input");
+const searchButton = document.getElementById("search-button");
+const currentWeatherContainer = document.getElementById("currentWeatherContainer"); // Add this line
+const forecastContainer = document.getElementById("forecastContainer"); // Add this line
+const historyList = document.getElementById("history-list"); // Assuming you have an element with id="history-list"
+
+// Event Listener for Search Button
+searchButton.addEventListener("click", function() {
+  const cityName = cityInput.value.trim();
+  if (cityName !== "") {
+    const apiUrl = `${baseUrl}?q=${cityName}&appid=${apiKey}`;
+    getWeatherData(apiUrl, cityName);
+  } else {
+    alert("Please enter a city name.");
+  }
+});
+
+// Function to Get Weather Data
+function getWeatherData(apiUrl, cityName) {
+  fetch(apiUrl)
+    .then(response => response.json())
+    .then(data => {
+      displayCurrentWeather(data);
+      displayForecast(data);
+      addToHistory(cityName);
+      saveToLocalStorage(cityName);
+    })
+    .catch(error => console.error("Error fetching weather data:", error));
+}
 // Function to Display Current Weather
 function displayCurrentWeather(data) {
   const currentWeather = data.list[0]; // Assuming the current weather data is in the first item of the list
