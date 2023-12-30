@@ -4,19 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weather App</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <header id="header">Weather App</header>
   <div id="app-container">
-    <label for="city-input">Enter City:</label>
-    <input type="text" id="city-input">
-    <button id="search-button">Search</button>
-    <div id="current-weather-container"></div>
-    <div id="forecast-container"></div>
-    <ul id="history-list"></ul>
+    <aside id="left-sidebar">
+      <h3>Saved Cities</h3>
+      <ul id="history-list"></ul>
+    </aside>
+    <main id="main-content">
+      <!-- Content for the current city will be dynamically added here -->
+    </main>
+    <aside id="right-sidebar">
+      <!-- Overflow cities will be displayed here -->
+    </aside>
   </div>
-
-  <script src="new-weather-dashboard.js"></script>
+  <footer id="footer"></footer>
+  <script src="app.js"></script>
 </body>
 </html>
-
