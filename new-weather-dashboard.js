@@ -66,15 +66,17 @@ function displayForecast(data) {
   // Assuming the forecast data is in the list starting from the second item
   const forecastList = data.list.slice(1, 6); // Displaying forecast for the next 5 days
 
-  const forecastHTML = forecastList.map(entry => {
-    const date = new Date(entry.dt_txt);
-    const temperature = entry.main.temp;
+  const forecastHTML = forecastList.map((entry, index) => {
+    const date = new Date();
+    date.setDate(date.getDate() + index + 1); // Set the date to be tomorrow and increment for subsequent days
+    const temperatureKelvin = entry.main.temp;
+    const temperatureCelsius = (temperatureKelvin - 273.15).toFixed(2);
     const description = entry.weather[0].description;
 
     return `
       <div>
-        <p>Date: ${date.toDateString()}</p>
-        <p>Temperature: ${temperature} &deg;C</p>
+        <p>Date: ${date.toLocaleDateString()}</p>
+        <p>Temperature: ${temperatureCelsius} &deg;C</p>
         <p>Description: ${description}</p>
       </div>
     `;
