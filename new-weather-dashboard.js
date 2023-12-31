@@ -2,13 +2,12 @@ const apiKey = "ebb88b956bf8c05653e9de0ca2230d40";
 const baseUrl = "https://api.openweathermap.org/data/2.5/forecast";
 const cityInput = document.getElementById("city-input");
 const searchButton = document.getElementById("search-button");
-const currentWeatherContainer = document.getElementById("currentWeatherContainer"); // Update ID
-const forecastContainer = document.getElementById("forecastContainer"); // Update ID
+const currentWeatherContainer = document.getElementById("currentWeatherContainer");
+const forecastContainer = document.getElementById("forecastContainer");
 const historyList = document.getElementById("history-list");
 
-
 // Event Listener for Search Button
-searchButton.addEventListener("click", function() {
+searchButton.addEventListener("click", function () {
   const cityName = cityInput.value.trim();
   if (cityName !== "") {
     const apiUrl = `${baseUrl}?q=${cityName}&appid=${apiKey}`;
@@ -19,7 +18,7 @@ searchButton.addEventListener("click", function() {
 });
 
 // Load historical data when the page is initially loaded
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   initializeLocalStorage();
   loadFromLocalStorage();
 });
@@ -45,7 +44,6 @@ function getWeatherData(apiUrl, cityName) {
     .catch(error => console.error("Error fetching weather data:", error));
 }
 
-
 // Function to Display Current Weather
 function displayCurrentWeather(data) {
   const currentWeather = data.list[0];
@@ -63,10 +61,7 @@ function displayCurrentWeather(data) {
   currentWeatherContainer.innerHTML = currentWeatherHTML;
 }
 
-
 // Function to Display Forecast
-function displayForecast(data) {
-  con// Function to Display Forecast
 function displayForecast(data) {
   // Assuming the forecast data is in the list starting from the second item
   const forecastList = data.list.slice(1, 6); // Displaying forecast for the next 5 days
@@ -87,7 +82,6 @@ function displayForecast(data) {
 
   forecastContainer.innerHTML = forecastHTML;
 }
-
 
 // Function to Add to History
 function addToHistory(cityName) {
