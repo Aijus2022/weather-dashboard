@@ -40,16 +40,22 @@ The Weather Dashboard app is designed to offer users a comprehensive view of the
 
 3. **Integration:**
    - The weather information and news articles are displayed side by side, providing a holistic view for the user.
-
-
-## Screenshots
+   
 
 ## Screenshots
 
-![Screenshot 1](weather-dashboard/images/Screenshot_2024-01-12_194455.png)
-![Screenshot 2](weather-dashboard/images/Screenshot_2024-01-12_194512.png)
-![Screenshot 3](weather-dashboard/images/Screenshot_2024-01-12_194535.png)
-![Screenshot 4](weather-dashboard/images/Screenshot_2024-01-12_194554.png)
+![Screenshot 1](images/Screenshot%202024-01-12%20194455.png)
+*Caption for Screenshot 1*
+
+![Screenshot 2](images/Screenshot%202024-01-12%20194512.png)
+*Caption for Screenshot 2*
+
+![Screenshot 3](images/Screenshot%202024-01-12%20194535.png)
+*Caption for Screenshot 3*
+
+![Screenshot 4](images/Screenshot%202024-01-12%20194554.png)
+*Caption for Screenshot 4*
+
 
 
 ## Live Demo
