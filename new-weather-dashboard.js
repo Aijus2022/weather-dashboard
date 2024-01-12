@@ -1,4 +1,3 @@
-// Assuming these are your actual API keys
 const openWeatherMapApiKey = "ebb88b956bf8c05653e9de0ca2230d40";
 const nyTimesApiKey = "uDC9FtINoMvYp08zQbOiSeHxUhancoEb";
 
