@@ -50,9 +50,19 @@ The Weather Dashboard app is designed to offer users a comprehensive view of the
 ## Live Demo
 
 Visit the live app: [Weather Dashboard with NYT Articles]https://aijus2022.github.io/weather-dashboard/
-     git clone https://github.com/Aijus2022/weather-dashboard
-Open index.html in your preferred web browser.
-Contribute
+
+## Installation <a name="installation"></a>
+
+To run the Weather Dashboard app locally, follow these steps:
+
+1. Clone the repository:
+
+  
+   git clone https://github.com/Aijus2022/weather-dashboard
+Open the index.html file in your preferred web browser.
+Now, you can interact with the app on your local machine.
+
+## Contribute <a name="contribute"></a>
 Contributions are welcome! Here's how you can contribute:
 
 Fork the repository
