@@ -16,7 +16,7 @@ body {
 
 #header, #footer {
   text-align: center;
-  color: linear-gradient(to bottom, #001f3f, #003366);
+  color: #191970;
   background: linear-gradient(to right, #FF4081, #FFD700, #87CEEB, #191970);
 }
 
@@ -44,8 +44,7 @@ body {
 }
 
 #footer {
-  text-align: center;
-  color: #00ff00;
+  text-align: center;  
   background: linear-gradient(to right, #FF4081, #FFD700, #87CEEB, #191970);
   padding: 10px;
   margin-top: auto;
