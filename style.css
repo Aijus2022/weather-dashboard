@@ -44,8 +44,7 @@ body {
 }
 
 #footer {
-  text-align: center;
-  color: #00ff00;
+  text-align: center;  
   background: linear-gradient(to right, #FF4081, #FFD700, #87CEEB, #191970);
   padding: 10px;
   margin-top: auto;
