@@ -6,44 +6,23 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
+
 #header, #footer, #left-sidebar, #main-content, #right-sidebar {
   border: 2px solid #00ff00;
   border-radius: 10px;
   padding: 10px;
   margin: 10px;
 }
+
 #header, #footer {
   text-align: center;
+  color: #191970;
   background: linear-gradient(to right, #FF4081, #FFD700, #87CEEB, #191970);
-}       
-       .text-container {
-            position: relative;
-            font-size: 36px;
-            color: transparent;
-        }
+}
 
-        /* Style for each letter */
-        .text-container span {
-            position: relative;
-            display: inline-block;
-        }
-
-        /* Apply border to each letter */
-        .text-container span:after {
-            content: attr(data-letter); /* Use the data-letter attribute to get the letter content */
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: -1;
-            -webkit-text-stroke: 2px #ffd700; /* Navy border color and thickness for WebKit browsers */
-            text-stroke: 2px #ffd700; /* Navy border color and thickness for other browsers */
-            background-clip: text; /* Make the background transparent within the text area */
-
-   
- 
 #app-container {
   display: flex;
-  flex-grow: 1; 
+  flex-grow: 1;
   overflow: hidden;
 }
 
@@ -66,7 +45,7 @@ body {
 
 #footer {
   text-align: center;
-  color:color: #191970;
+  color: #00ff00;
   background: linear-gradient(to right, #FF4081, #FFD700, #87CEEB, #191970);
   padding: 10px;
   margin-top: auto;
