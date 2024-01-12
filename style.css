@@ -28,15 +28,15 @@ body {
             display: inline-block;
         }
 
-        /* Apply the golden border to each letter */
+        /* Apply border to each letter */
         .text-container span:after {
             content: attr(data-letter); /* Use the data-letter attribute to get the letter content */
             position: absolute;
             top: 0;
             left: 0;
             z-index: -1;
-            -webkit-text-stroke: 2px #ffd700; /* Golden border color and thickness for WebKit browsers */
-            text-stroke: 2px #ffd700; /* Golden border color and thickness for other browsers */
+            -webkit-text-stroke: 2px #ffd700; /* Navy border color and thickness for WebKit browsers */
+            text-stroke: 2px #ffd700; /* Navy border color and thickness for other browsers */
             background-clip: text; /* Make the background transparent within the text area */
 
    
