@@ -41,7 +41,6 @@ The Weather Dashboard app is designed to offer users a comprehensive view of the
 3. **Integration:**
    - The weather information and news articles are displayed side by side, providing a holistic view for the user.
 
-## Screenshots
 
 ## Screenshots
 
