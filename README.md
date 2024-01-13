@@ -44,7 +44,7 @@ The Weather Dashboard app is designed to offer users a comprehensive view of the
 
 ## Screenshots
 
-![Screenshot 1](images/Screenshot%202024-01-12%20194455.png)
+![Screenshot 1](screenshots/screenshot-laptop-screen.png)
 *Caption for Screenshot 1*
 
 ![Screenshot 2](images/Screenshot%202024-01-12%20194512.png)
