@@ -102,15 +102,15 @@ li {
 #articles-header {
   margin-bottom: 15px;
 }
-/*  media query */
 @media (max-width: 768px) {
   #app-container {
     flex-direction: column;
   }
 
- #left-sidebar, #right-sidebar {
-   position:relative;
-    width:100%; /* Make sidebars take up full width */
-    
+  #left-sidebar, #right-sidebar {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box; /* Ensure padding is included in the width calculation */
+    padding: 10px; /* Adjust padding as needed */
   }
 }
