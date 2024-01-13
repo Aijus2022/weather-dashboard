@@ -50,7 +50,7 @@ The Weather Dashboard app is designed to offer users a comprehensive view of the
 ![Screenshot 2 on mobile phone](screenshots/Screenshot_2024-01-13-04-03-25-16_40deb401b9ffe8e1df2f1cc5ba480b12.jpg)
 *Caption for Screenshot 2*
 
-![Screenshot 3](images/Screenshot%202024-01-12%20194535.png)
+![Screenshot 3](screenshots/Screenshot_2024-01-13-04-03-55-70_40deb401b9ffe8e1df2f1cc5ba480b12.jpg)
 *Caption for Screenshot 3*
 
 ![Screenshot 4](images/Screenshot%202024-01-12%20194554.png)
