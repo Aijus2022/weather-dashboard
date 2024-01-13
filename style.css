@@ -110,7 +110,7 @@ li {
 
  #left-sidebar, #right-sidebar {
    position:relative;
-    width: 99%; /* Make sidebars take up full width */
-    padding-right:4px;/* padding to the right side for small screens */
+    width:100%; /* Make sidebars take up full width */
+    
   }
 }
