@@ -98,3 +98,13 @@ li {
 #articles-header {
   margin-bottom: 15px;
 }
+/* Add this media query to your existing CSS */
+@media (max-width: 768px) {
+  #app-container {
+    flex-direction: column;
+  }
+
+  #left-sidebar, #right-sidebar {
+    width: 100%; /* Make sidebars take up full width */
+  }
+}
