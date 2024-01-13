@@ -13,17 +13,6 @@ body {
   padding: 10px;
   margin: 10px;
 }
-#app-container {
-  display: flex;
-  flex-direction: row; /* Keep the default row direction for wider screens */
-}
-
-#left-sidebar, #main-content, #right-sidebar {
-  flex: 1; /* Distribute available height equally among the three items */
-  margin-top: 10px;
-  margin-bottom: 10px;
-  box-sizing: border-box; /* Include padding and borders in the element's total width and height */
-}
 
 #header, #footer {
   text-align: center;
