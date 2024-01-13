@@ -102,7 +102,7 @@ li {
 #articles-header {
   margin-bottom: 15px;
 }
-@media (max-width: 400px) {
+@media (max-width: 630px) {
   #app-container {
     flex-direction: column;
   }
@@ -112,5 +112,6 @@ li {
     width: 100%;
     box-sizing: border-box; /* Ensure padding is included in the width calculation */
     padding: 10px; /* Adjust padding as needed */
+    overflow-x:scroll;
   }
 }
