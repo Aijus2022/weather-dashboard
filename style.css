@@ -107,7 +107,7 @@ li {
   }
 
  #left-sidebar, #right-sidebar {
-    width: 100%; /* Make sidebars take up full width */
-    padding: 0 10px; /* Add margin to both left and right sides for small screens */
+    max-width: 100%; /* Make sidebars take up full width */
+    padding-right:8px; /* padding to the right side for small screens */
   }
 }
