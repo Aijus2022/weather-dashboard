@@ -1,4 +1,7 @@
-/* style.css */
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -106,13 +109,10 @@ li {
   #app-container {
     flex-direction: column;
   }
-
+  
   #left-sidebar, #right-sidebar {
-    position: relative;
-    width: 100%;
-    box-sizing: border-box; /* Ensure padding is included in the width calculation */
-    padding: 10px; /* Adjust padding as needed */
-    overflow-x:scroll;
-    margin-right:10px;
+    width: calc(100% - 20px); /* Adjust margin and padding accordingly */
+    margin: 10px;
+    padding: 10px;
   }
 }
